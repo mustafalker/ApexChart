@@ -9,6 +9,8 @@ import { TaahhutComponent } from './taahhut/taahhut.component';
 import { TaahhutAndTesellumStackedChartComponent } from './taahhut-and-tesellum-stacked-chart/taahhut-and-tesellum-stacked-chart.component';
 import { FabrikaTaahhutlerComponent } from './fabrika-taahhutler/fabrika-taahhutler.component';
 import { StackedOlmadanTaahhutTesellumComponent } from './stacked-olmadan-taahhut-tesellum/stacked-olmadan-taahhut-tesellum.component';
+import { LineChartExampleComponent } from './line-chart-example/line-chart-example.component';
+import { SimpleDonutExampleComponent } from './simple-donut-example/simple-donut-example.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +18,9 @@ import { StackedOlmadanTaahhutTesellumComponent } from './stacked-olmadan-taahhu
     TaahhutComponent,
     TaahhutAndTesellumStackedChartComponent,
     FabrikaTaahhutlerComponent,
-    StackedOlmadanTaahhutTesellumComponent
+    StackedOlmadanTaahhutTesellumComponent,
+    LineChartExampleComponent,
+    SimpleDonutExampleComponent
   ],
   imports: [
     BrowserModule,

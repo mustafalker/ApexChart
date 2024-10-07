@@ -120,25 +120,19 @@ export class FabrikaTaahhutlerComponent implements OnInit {
         { "DonemYili": 2022, "FabrikaKodu": 24, "FABRIKA_ADI": "UŞAK ŞEKER FABRİKASI", "NetPancar": 165338 }
       ];  
 
-
-    // Fabrika adlarını Türk alfabesine göre sıralama
     this.Tesellum.sort((a, b) => a.FABRIKA_ADI.localeCompare(b.FABRIKA_ADI, 'tr'));
 
-    // Mevcut yılları belirle
     this.availableYears = [...new Set(this.Tesellum.map(t => t.DonemYili))]; 
   }
 
   ngOnInit(): void {
-    // Mevcut yılları çıkaralım
     this.availableYears = [...new Set(this.Tesellum.map(item => item.DonemYili))].sort((a, b) => a - b);
     
-    // Varsayılan yıl için verileri ayarla
     this.updateChart(this.selectedYear);
   }
 
   updateChart(year: number) {
     const filteredData = this.Tesellum.filter(t => t.DonemYili === year);
-    // const filteredData2 = this.Fabrikalar.filter(f)
     
     this.chartOptions = {
       series: [
@@ -157,7 +151,11 @@ export class FabrikaTaahhutlerComponent implements OnInit {
         }
       },
       dataLabels: {
-        enabled: false
+        enabled: true,
+        offsetY: +10000,
+        style: {
+          colors: ['rgb(255, 255, 255)'] 
+        }
       },
       xaxis: {
         categories: filteredData.map(t => t.FABRIKA_ADI)

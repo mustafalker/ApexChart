@@ -1,0 +1,15 @@
+<div class="year-selector">
+    <span *ngFor="let year of availableYears">
+      <button (click)="onYearChange(year)" [class.active]="year === selectedYear">{{ year }}</button>
+    </span>
+  </div>
+
+<div>
+    <apx-chart
+    [series]="chartOptions.series"
+    [chart]="chartOptions.chart"
+    [labels]="chartOptions.labels"
+    [legend]="chartOptions.legend"
+    [responsive]="chartOptions.responsive"
+  ></apx-chart>  
+</div>
