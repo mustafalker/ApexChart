@@ -6,6 +6,7 @@ import { FabrikaTaahhutlerComponent } from './fabrika-taahhutler/fabrika-taahhut
 import { StackedOlmadanTaahhutTesellumComponent } from './stacked-olmadan-taahhut-tesellum/stacked-olmadan-taahhut-tesellum.component';
 import { LineChartExampleComponent } from './line-chart-example/line-chart-example.component';
 import { SimpleDonutExampleComponent } from './simple-donut-example/simple-donut-example.component';
+import { BasicPolarAreaChartComponent } from './basic-polar-area-chart/basic-polar-area-chart.component';
 
 
 const routes: Routes = [
@@ -14,6 +15,7 @@ const routes: Routes = [
   {path: 'fabrikalar-tesellumler' , component: FabrikaTaahhutlerComponent},
   {path: 'stackedolmayan', component:StackedOlmadanTaahhutTesellumComponent},
   {path: 'linechartexample', component:LineChartExampleComponent},
+  {path: 'basicpolararea', component:BasicPolarAreaChartComponent},
   {path: 'simpledonutexample', component:SimpleDonutExampleComponent}
 ];
 

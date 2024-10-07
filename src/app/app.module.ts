@@ -11,6 +11,7 @@ import { FabrikaTaahhutlerComponent } from './fabrika-taahhutler/fabrika-taahhut
 import { StackedOlmadanTaahhutTesellumComponent } from './stacked-olmadan-taahhut-tesellum/stacked-olmadan-taahhut-tesellum.component';
 import { LineChartExampleComponent } from './line-chart-example/line-chart-example.component';
 import { SimpleDonutExampleComponent } from './simple-donut-example/simple-donut-example.component';
+import { BasicPolarAreaChartComponent } from './basic-polar-area-chart/basic-polar-area-chart.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { SimpleDonutExampleComponent } from './simple-donut-example/simple-donut
     FabrikaTaahhutlerComponent,
     StackedOlmadanTaahhutTesellumComponent,
     LineChartExampleComponent,
-    SimpleDonutExampleComponent
+    SimpleDonutExampleComponent,
+    BasicPolarAreaChartComponent
   ],
   imports: [
     BrowserModule,
